@@ -55,3 +55,23 @@ function removeTask(taskToRemove) {
     tasks = tasks.filter(task => task !== taskToRemove);
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+const themeToggle = document.getElementById("themeToggle");
+
+// Load saved theme when page loads
+document.addEventListener("DOMContentLoaded", function () {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+});
+
+// Toggle theme when button clicked
+themeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+});
