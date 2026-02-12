@@ -26,6 +26,7 @@ addTaskBtn.addEventListener("click", function () {
     taskInput.value = ""; 
 
 });
+<<<<<<< HEAD
 ul {
     list-style: none;
     padding: 0;
@@ -42,3 +43,5 @@ li {
 button {
     cursor: pointer;
 }
+=======
+>>>>>>> 0507deb (prevoius commit was removed)
