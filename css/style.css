@@ -28,3 +28,11 @@ li {
 button {
     cursor: pointer;
 }
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode li {
+    background: #333;
+}
